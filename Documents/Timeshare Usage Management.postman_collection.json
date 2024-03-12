@@ -1,0 +1,3661 @@
+{
+	"info": {
+		"_postman_id": "2db96452-798b-481e-96c1-4c49b60f9380",
+		"name": "Timeshare Usage Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33254414",
+		"_collection_link": "https://red-trinity-970387.postman.co/workspace/My-Workspace~f3a2c80d-4c2c-4343-89ef-872060e804af/collection/33254414-2db96452-798b-481e-96c1-4c49b60f9380?action=share&source=collection_link&creator=33254414"
+	},
+	"item": [
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "View",
+					"item": [
+						{
+							"name": "Role",
+							"item": [
+								{
+									"name": "View_Admin",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/users/ROLE_ADMIN",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"users",
+												"ROLE_ADMIN"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "View_Staff",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/users/ROLE_STAFF",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"users",
+												"ROLE_STAFF"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "View_Customer",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/users/ROLE_CUSTOMER",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"users",
+												"ROLE_CUSTOMER"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Edit",
+					"item": [
+						{
+							"name": "ChangeStatus_Active",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/users/staff/active/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"users",
+										"staff",
+										"active",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ChangeStatus_Block",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/users/staff/block/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"users",
+										"staff",
+										"block",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Total",
+					"item": [
+						{
+							"name": "total_Active",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/users/staff/totalActive",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"users",
+										"staff",
+										"totalActive"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "total_Block",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/users/staff/totalBlock",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"users",
+										"staff",
+										"totalBlock"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Total_Price_For_Done_Bookings",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/bookings/admin/total_Price_For_Done_Bookings",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"bookings",
+										"admin",
+										"total_Price_For_Done_Bookings"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Monthly_Total_Price_Booking",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/bookings/admin/monthlyTotalPrice/2024",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"bookings",
+										"admin",
+										"monthlyTotalPrice",
+										"2024"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Total_Price_Book_Year",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/bookings/admin/yearlyTotalPrice/2024",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"bookings",
+										"admin",
+										"yearlyTotalPrice",
+										"2024"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Staff",
+			"item": [
+				{
+					"name": "Account",
+					"item": [
+						{
+							"name": "View",
+							"item": [
+								{
+									"name": "Total",
+									"item": [
+										{
+											"name": "Count_Staff",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "http://localhost:8080/api/users/staff/count/ROLE_STAFF",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "8080",
+													"path": [
+														"api",
+														"users",
+														"staff",
+														"count",
+														"ROLE_STAFF"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "Count_Customer",
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "http://localhost:8080/api/users/staff/count/ROLE_CUSTOMER",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "8080",
+													"path": [
+														"api",
+														"users",
+														"staff",
+														"count",
+														"ROLE_CUSTOMER"
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Delete_aAcount",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/users/delete/10",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"users",
+										"delete",
+										"10"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ViewById",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/users/viewDetail/16",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"users",
+										"viewDetail",
+										"16"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ViewAll",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/users/staffview",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"users",
+										"staffview"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update_Status",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"userID\": 5,\r\n        \"userName\": \"Customer5\",\r\n        \"userPhone\": \"666666666\",\r\n        \"userEmail\": \"customer5@example.com\",\r\n        \"userPassword\": \"password5\",\r\n        \"userStatus\": \"Done\",\r\n        \"userBirthday\": \"1988-03-30\",\r\n        \"roleID\": 2\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/staff/update-status/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"staff",
+										"update-status",
+										"5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete_Accounts",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[9, 14, 15]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/users/staff/accounts/delete",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"users",
+										"staff",
+										"accounts",
+										"delete"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "News",
+					"item": [
+						{
+							"name": "View_News",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/news/view",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"news",
+										"view"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "View_NewsById",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/news/viewDetail/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"news",
+										"viewDetail",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete_News",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/news/delete/10",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"news",
+										"delete",
+										"10"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create_News",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"// Fixed syntax error in existing test scripts\r",
+											"pm.test(\"Response status code is 500\", function () {\r",
+											"  pm.response.to.have.status(500);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "news",
+											"type": "file",
+											"src": "postman-cloud:///1eed6407-2d92-4af0-88c3-dab379c95bf6"
+										},
+										{
+											"key": "newsTitle",
+											"value": "Bai Bao moi nhat",
+											"type": "text"
+										},
+										{
+											"key": "newsPost",
+											"value": "2024-03-01 00:00:00.000",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "newsContent",
+											"value": "Hom nay tui di code rat la vui ne. Ban co vui khong. Tui nghien code va nghien bo nua ahi hi",
+											"type": "text"
+										},
+										{
+											"key": "newsViewer",
+											"value": "100",
+											"type": "text"
+										},
+										{
+											"key": "newsStatus",
+											"value": "Active",
+											"type": "text"
+										},
+										{
+											"key": "accID",
+											"value": "2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/news",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"news"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update_News",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"// Fixed syntax error in existing test scripts\r",
+											"pm.test(\"Response status code is 500\", function () {\r",
+											"  pm.response.to.have.status(500);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "news",
+											"type": "file",
+											"src": "postman-cloud:///1eed6407-2d92-4af0-88c3-dab379c95bf6"
+										},
+										{
+											"key": "newsTitle",
+											"value": "Bai Bao moi nhat",
+											"type": "text"
+										},
+										{
+											"key": "newsPost",
+											"value": "2024-03-01 00:00:00.000",
+											"type": "text"
+										},
+										{
+											"key": "newsContent",
+											"value": "Hom nay tui di code rat la vui ne. Ban co vui khong. Tui nghien code va nghien bo nua ahi hi",
+											"type": "text"
+										},
+										{
+											"key": "newsViewer",
+											"value": "200",
+											"type": "text"
+										},
+										{
+											"key": "newsStatus",
+											"value": "Active",
+											"type": "text"
+										},
+										{
+											"key": "accID",
+											"value": "2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/news/edit/34",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"news",
+										"edit",
+										"34"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Report",
+					"item": [
+						{
+							"name": "View_Report",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/reports/viewAll",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"reports",
+										"viewAll"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "View_Report By IdProduct",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/reports/viewByProductId/12",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"reports",
+										"viewByProductId",
+										"12"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "View_ReportDetail",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/reports/viewDetail/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"reports",
+										"viewDetail",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete_Report",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/reports/delete/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"reports",
+										"delete",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update_Report",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"reportCreateDate\": \"2024-02-16T13:00:00\",\r\n        \"reportDetail\": \"Tuan Dat sieu sieu dep trai và xiu giỏi.\",\r\n        \"reportStatus\": \"Resolved\",\r\n        \"accID\": 1,\r\n        \"productID\": 11\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/reports/update/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"reports",
+										"update",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Product",
+					"item": [
+						{
+							"name": "View",
+							"item": [
+								{
+									"name": "ViewStatus_Pending",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "localhost:8080/api/products/staff/pending",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"products",
+												"staff",
+												"pending"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "ViewStatus_Closed",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "localhost:8080/api/products/staff/closed",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"products",
+												"staff",
+												"closed"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "ViewStatus_Rejected",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "localhost:8080/api/products/staff/rejected",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"products",
+												"staff",
+												"rejected"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "ViewStatus_Active",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "localhost:8080/api/products/staff/active",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"products",
+												"staff",
+												"active"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Edit",
+							"item": [
+								{
+									"name": "ChangeStatus_Closed",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/products/staff/close/12",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"products",
+												"staff",
+												"close",
+												"12"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "ChangeStatus_Active",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/products/staff/active/12",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"products",
+												"staff",
+												"active",
+												"12"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "ChangeStatus_Rejected",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/products/staff/reject/12",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"products",
+												"staff",
+												"reject",
+												"12"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "ChangeStatus_Pending",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/products/staff/pending/12",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"products",
+												"staff",
+												"pending",
+												"12"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Total",
+							"item": [
+								{
+									"name": "Product_StatusPending",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "localhost:8080/api/products/staff/totalPending",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"products",
+												"staff",
+												"totalPending"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Product_StatusClosed",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "localhost:8080/api/products/staff/totalClosed",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"products",
+												"staff",
+												"totalClosed"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Product_StatusRejected",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "localhost:8080/api/products/staff/totalRejected",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"products",
+												"staff",
+												"totalRejected"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Product_Active",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "localhost:8080/api/products/staff/totalActive",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"products",
+												"staff",
+												"totalActive"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Picture",
+							"item": [
+								{
+									"name": "Picture_ByProductID",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/pictures/viewPicture/9",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"pictures",
+												"viewPicture",
+												"9"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Picture_ByProductID Copy",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/pictures/customerview",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"pictures",
+												"customerview"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Search",
+					"item": [
+						{
+							"name": "Product_Search",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/products/search?productName=a&productStatus=pending",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"products",
+										"search"
+									],
+									"query": [
+										{
+											"key": "productName",
+											"value": "a"
+										},
+										{
+											"key": "productStatus",
+											"value": "pending"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Account_Search",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/users/search?accName=dat&roleName=admin",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"users",
+										"search"
+									],
+									"query": [
+										{
+											"key": "accName",
+											"value": "dat"
+										},
+										{
+											"key": "roleName",
+											"value": "admin"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Form",
+					"item": [
+						{
+							"name": "Product_Status",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/products/statuses",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"products",
+										"statuses"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Report_Status",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/reports/statuses",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"reports",
+										"statuses"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Account_Status",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/users/statuses",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"users",
+										"statuses"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Booking",
+					"item": [
+						{
+							"name": "View",
+							"item": [
+								{
+									"name": "ViewStatus_Active",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/bookings/customer/waitToRespond-Active/2",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"bookings",
+												"customer",
+												"waitToRespond-Active",
+												"2"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "ViewStatus_waitToConfirm",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/bookings/staff/waitToConfirm",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"bookings",
+												"staff",
+												"waitToConfirm"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "ViewStatus_waitToConfirmRC",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/bookings/staff/waitToConfirmRC",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"bookings",
+												"staff",
+												"waitToConfirmRC"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "ViewStatus_Pending",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/bookings/staff/pending",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"bookings",
+												"staff",
+												"pending"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "ViewStatus_Done",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/bookings/staff/done",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"bookings",
+												"staff",
+												"done"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "ViewStatus_Cancel",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/bookings/staff/cancel",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"bookings",
+												"staff",
+												"cancel"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "ViewStatus_Respond+Active",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/bookings/staff/waitToRespond-Active",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"bookings",
+												"staff",
+												"waitToRespond-Active"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "ViewStatus_Respond",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/bookings/staff/respond",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"bookings",
+												"staff",
+												"respond"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "ViewImgBanking",
+									"request": {
+										"method": "GET",
+										"header": []
+									},
+									"response": []
+								},
+								{
+									"name": "Wait respond payment (100%)",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/bookings/staff/WaitRespondPayment(100)",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"bookings",
+												"staff",
+												"WaitRespondPayment(100)"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Wait respond payment (80%)",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/bookings/staff/WaitRespondPayment(80)",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"bookings",
+												"staff",
+												"WaitRespondPayment(80)"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Customer/View Wait To",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/bookings/customer/waitToByAccId/2",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"bookings",
+												"customer",
+												"waitToByAccId",
+												"2"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "New Request",
+									"request": {
+										"method": "GET",
+										"header": []
+									},
+									"response": []
+								},
+								{
+									"name": "New Request",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/bookings/by-account/cacel/1",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"bookings",
+												"by-account",
+												"cacel",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "View_ Img_Respond",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/bookings/paymentRespond/viewImg/images (1).jpg",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"bookings",
+												"paymentRespond",
+												"viewImg",
+												"images (1).jpg"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Edit",
+							"item": [
+								{
+									"name": "ChangeStatus_Acitve",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/bookings/staff/active/3",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"bookings",
+												"staff",
+												"active",
+												"3"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "ChangeStatus_Pending",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/bookings/staff/pending/3",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"bookings",
+												"staff",
+												"pending",
+												"3"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "ChangeStatus_Cancel",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/bookings/staff/cancel/3",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"bookings",
+												"staff",
+												"cancel",
+												"3"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "ChangeStatus_Done",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/bookings/staff/Done/3",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"bookings",
+												"staff",
+												"Done",
+												"3"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "ChangeStatus_waitToConfirm",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/bookings/staff/waitToConfirm/3",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"bookings",
+												"staff",
+												"waitToConfirm",
+												"3"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "ChangeStatus_waitToConfirmRequestCancel",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/bookings/staff/waitToConfirmRequestCancel/3",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"bookings",
+												"staff",
+												"waitToConfirmRequestCancel",
+												"3"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Active-Wait To Respond 100%",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/bookings/staff/respond100/6",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"bookings",
+												"staff",
+												"respond100",
+												"6"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Active-Wait To Respond 80%",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/bookings/staff/respond80/5",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"bookings",
+												"staff",
+												"respond80",
+												"5"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Final cancel 80% (sau respond)",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/bookings/staff/finalcancel80/13",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"bookings",
+												"staff",
+												"finalcancel80",
+												"13"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Final cancel 100% (sau respond) Copy",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/bookings/staff/finalcancel100/17",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"bookings",
+												"staff",
+												"finalcancel100",
+												"17"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Rejected",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/bookings/staff/Rejected/3",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"bookings",
+												"staff",
+												"Rejected",
+												"3"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Upload_ImgRespond",
+									"request": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "picture",
+													"type": "file",
+													"src": "postman-cloud:///1eed8824-2f78-4590-9e17-c36d5fc95d18"
+												}
+											]
+										},
+										"url": {
+											"raw": "http://localhost:8080/api/bookings/updateImgRespond/18",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"bookings",
+												"updateImgRespond",
+												"18"
+											],
+											"query": [
+												{
+													"key": "picture",
+													"value": null,
+													"disabled": true
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Total",
+							"item": [
+								{
+									"name": "StatusPending",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/bookings/staff/totalPending",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"bookings",
+												"staff",
+												"totalPending"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "StatusWaitToConfirm",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/bookings/staff/totalWaitToConfirm",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"bookings",
+												"staff",
+												"totalWaitToConfirm"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "StatusWaitToConfirmRC",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/bookings/staff/totalWaitToConfirmRC",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"bookings",
+												"staff",
+												"totalWaitToConfirmRC"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "StatusActive",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/bookings/staff/totalActive",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"bookings",
+												"staff",
+												"totalActive"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "StatusCancel",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/bookings/staff/totalCancel",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"bookings",
+												"staff",
+												"totalCancel"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "StatusDone",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/bookings/staff/totalDone",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"bookings",
+												"staff",
+												"totalDone"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "StatusWaitToRespond",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8080/api/bookings/staff/totalWaitToRespond",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8080",
+											"path": [
+												"api",
+												"bookings",
+												"staff",
+												"totalWaitToRespond"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Payment",
+					"item": [
+						{
+							"name": "viewAll",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/payment/viewAll",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"payment",
+										"viewAll"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ViewByID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/payment/payment/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"payment",
+										"payment",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "Booking",
+					"item": [
+						{
+							"name": "Customer/ViewAll",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/bookings/customerview",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"bookings",
+										"customerview"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Customer/Create",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"startDate\": \"2024-02-13T10:00:00\",\r\n        \"endDate\": \"2024-02-13T10:00:00\",\r\n        \"bookingPrice\": 100.0,\r\n        \"paymentMethods\": \"5\",\r\n        \"bookingRating\": 5.0,\r\n        \"bookingStatus\": \"active\",\r\n        \"accID\": 1,\r\n        \"productID\": 9,\r\n        \"paymentID\": 1\r\n  \r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/bookings/customer/createbooking",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"bookings",
+										"customer",
+										"createbooking"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Customer/ViewByAccId",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/bookings/by-account/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"bookings",
+										"by-account",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Customer/ViewById",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/bookings/view-booking-by-Id/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"bookings",
+										"view-booking-by-Id",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ViewPriceByProductID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/bookings/view-booking-price/13",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"bookings",
+										"view-booking-price",
+										"13"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "TotalBookPriceByProductID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/bookings/total-booking-price/19",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"bookings",
+										"total-booking-price",
+										"19"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Customer/DeleteById",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/bookings/customer/deletebooking/27",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"bookings",
+										"customer",
+										"deletebooking",
+										"27"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Feedback",
+					"item": [
+						{
+							"name": "Customer/ViewAll",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/feedback/customer/viewfeedback",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"feedback",
+										"customer",
+										"viewfeedback"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Customer/Submit",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"feedbackDetail\": \"Excellent service and accommodation.\",\r\n        \"feedbackStatus\": \"active\",\r\n        \"feedbackRating\": 4.0,\r\n        \"bookingID\": 10,\r\n        \"productID\": 9\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/feedback/customer/submitfeedback",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"feedback",
+										"customer",
+										"submitfeedback"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Customer/EditById",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"feedbackDetail\": \"Very Good\",\r\n        \"feedbackStatus\": \"active\",\r\n        \"feedbackRating\": 4,\r\n        \"bookingID\": 1,\r\n        \"productID\": 9\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/feedback/api/feedbacks/edit/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"feedback",
+										"api",
+										"feedbacks",
+										"edit",
+										"5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Customer/DeleteFeedback",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/feedback/delete-feedback/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"feedback",
+										"delete-feedback",
+										"5"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Report",
+					"item": [
+						{
+							"name": "Customer/ViewAll",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/reports/viewAll",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"reports",
+										"viewAll"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Customer/Submit",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n      \r\n        \"reportDetail\": \"tuyet voi\",\r\n        \"reportStatus\": \"Pending\",\r\n        \"accID\": 4,\r\n        \"productID\": 13\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/reports/customer/submitreport",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"reports",
+										"customer",
+										"submitreport"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Edit",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n        \"reportDetail\": \"Xau quac\",\r\n        \"reportStatus\": \"Active\",\r\n        \"accID\": 1,\r\n        \"productID\": 11\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/reports/update/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"reports",
+										"update",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Product",
+					"item": [
+						{
+							"name": "ViewByProductId",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/products/viewById/22",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"products",
+										"viewById",
+										"22"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "View all (Quý Viết)",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Your product id\", function () {\r",
+											"    var jsonData = pm.response.json();\r",
+											"    pm.expect(jsonData.productStatus).to.eql('pending');\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/products/view_all",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"products",
+										"view_all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "View product (Sort by view _ giảm dần)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/products/view/by_viewer/descending",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"products",
+										"view",
+										"by_viewer",
+										"descending"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "View product (Sort by view _ tăngdần)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/products/view/by_viewer/ascending",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"products",
+										"view",
+										"by_viewer",
+										"ascending"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "View product (Sort by area_giảm dần)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/products/view/by_area/descending",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"products",
+										"view",
+										"by_area",
+										"descending"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "View product (Sort by area tăng dần)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/products/view/by_area/ascending",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"products",
+										"view",
+										"by_area",
+										"ascending"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "View product (Sort by price_ tăng dần)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/products/view/by_price/ascending",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"products",
+										"view",
+										"by_price",
+										"ascending"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "View product (Sort by price_ giảm dần)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/products/view/by_price/descending",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"products",
+										"view",
+										"by_price",
+										"descending"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "View product của người dùng (view by userid)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/products/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"products",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add product",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"productName\": \"Luxury Villa\",\r\n        \"productArea\": 200.0,\r\n        \"productAddress\": null,\r\n        \"productDescription\": \"Spacious villa with modern amenities.\",\r\n        \"productConvenience\": \"gym, and garden.\",\r\n        \"productPrice\": 600.0,\r\n        \"availableStartDate\": \"2024-02-15T12:00:00\",\r\n        \"availableEndDate\": \"2024-03-01T12:00:00\",\r\n        \"productStatus\": \"Pending\",\r\n        \"productPerson\": 5,\r\n        \"productRating\": 5.0,\r\n        \"productSale\": 0,\r\n        \"productViewer\": 12,\r\n        \"productPicture\": null,\r\n        \"projectID\": 2,\r\n        \"productTypeID\": 1,\r\n        \"accID\": 1\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/products/add",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"products",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Xóa product ",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/products/delete/22/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"products",
+										"delete",
+										"22",
+										"4"
+									]
+								},
+								"description": "(Dựa vào productID, userID, chỉ có useid chủ mới đc xóa product của mình)\r\nApi sẽ trả về list các product sau khi đã xóa product chỉ định"
+							},
+							"response": []
+						},
+						{
+							"name": "Tính tổng doanh thu của tất cả sản phẩm của 1 user",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/products/sum/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"products",
+										"sum",
+										"1"
+									]
+								},
+								"description": "http://localhost:8080/api/products/sum/{user_id}"
+							},
+							"response": []
+						},
+						{
+							"name": "Edit product dựa trên productID, userID",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"productID\": 23,\r\n    \"productName\": \"123\",\r\n    \"productDescription\": \"abc\",\r\n    \"productConvenience\": \"abc\",\r\n    \"productArea\": 3,\r\n    \"productPrice\": 3,\r\n    \"availableStartDate\": \"2024-03-20T08:00:00\",\r\n    \"availableEndDate\": \"2024-03-25T10:00:00\",\r\n    \"productStatus\": \"active\",\r\n    \"productViewer\":3 ,\r\n    // \"productPicture\": \"aaa\",\r\n    \"projectID\": 2,\r\n    \"productTypeID\": 3,\r\n    \"productPerson\": 9,\r\n    \"productRating\": 3.6,  \r\n    \"accID\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/products/edit/23/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"products",
+										"edit",
+										"23",
+										"1"
+									]
+								},
+								"description": "http://localhost:8080/api/products/edit/{product_id}/{user_id}\r\ntruyền vào productID cần sửa và userID. Chỉ id của chủ product mới có quyền sửa"
+							},
+							"response": []
+						},
+						{
+							"name": "View By ProductTypeID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/products/viewByProductTypeId/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"products",
+										"viewByProductTypeId",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Project",
+					"item": [
+						{
+							"name": "ViewAll",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/project/customer/viewproject",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"project",
+										"customer",
+										"viewproject"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Picture",
+					"item": [
+						{
+							"name": "ViewAll",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/pictures/customerview",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"pictures",
+										"customerview"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ViewPicture",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/pictures/viewPicture/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"pictures",
+										"viewPicture",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ViewByProductId",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/pictures/viewPicture/9",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"pictures",
+										"viewPicture",
+										"9"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Product_Type",
+					"item": [
+						{
+							"name": "view",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Authenticate",
+			"item": [
+				{
+					"name": "Đăng kí",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accName\": \"Quy\",\r\n    \"accPhone\":\"00000\",\r\n    \"accEmail\":\"ducquyyy@example.com\",\r\n    \"accPassword\":\"xxx\",\r\n    \"accImg\":\"xxx\",\r\n    \"accStatus\":\"active\",\r\n    \"accBirthday\":\"2024-03-25T10:00:00\"\r\n    //accId database tự generate\r\n    //role thì khi đăng kí code tự lưu là customer\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/auth/register-user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"register-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"sta003@example.com\",\r\n    \"password\": \"password3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"login"
+							]
+						},
+						"description": "Sau khi login sẽ trả về token \r\nChuyển qua phần Auhtorization chọn Type Bear Token\r\nPhần Token ghi \"Bear \"+token nó mới trả về để sử dụng những api đã được phan quyền cho người đăng nhập có role tương ứng(tạm thời chưa code phân quyền)"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Picture",
+			"item": [
+				{
+					"name": "Product",
+					"item": [
+						{
+							"name": "Upload",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "pictures",
+											"type": "file",
+											"src": "postman-cloud:///1eed6437-20c3-46a0-8edf-bd06645ab8ce"
+										},
+										{
+											"key": "pictures",
+											"type": "file",
+											"src": "postman-cloud:///1eed7a88-1f4b-4680-8296-e00e441dd14c"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/pictures/10",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"pictures",
+										"10"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Upload_Pictures",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "pictures",
+											"type": "file",
+											"src": [
+												"postman-cloud:///1eed6004-1c55-46e0-a0e9-d411677f9678",
+												"postman-cloud:///1eed7a88-1f4b-4680-8296-e00e441dd14c",
+												"postman-cloud:///1eed7a8b-1a34-4950-bfd4-7a5ff8b70c07",
+												"postman-cloud:///1eed7a6a-64ed-4030-b06b-44958ab88852",
+												"postman-cloud:///1eed6437-20c3-46a0-8edf-bd06645ab8ce",
+												"postman-cloud:///1eed6407-2d92-4af0-88c3-dab379c95bf6",
+												"postman-cloud:///1eed6296-ea05-4ab0-a7e7-a6d85a25606b"
+											]
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/pictures/17",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"pictures",
+										"17"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UpdateImg",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "pictures",
+											"type": "file",
+											"src": "postman-cloud:///1eed6018-8908-4cb0-9b30-ece4b513d3c3"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/pictures/updateImg/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"pictures",
+										"updateImg",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Download",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/pictures/imgView/fbc7ee9fb38b18e69d4b438d2ee93345.jpg",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"pictures",
+										"imgView",
+										"fbc7ee9fb38b18e69d4b438d2ee93345.jpg"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ViewPicture_ProductID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/pictures/viewPicture/9",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"pictures",
+										"viewPicture",
+										"9"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Account",
+					"item": [
+						{
+							"name": "Create_Account",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "Avatar",
+											"type": "file",
+											"src": "postman-cloud:///1eed6407-2d92-4af0-88c3-dab379c95bf6"
+										},
+										{
+											"key": "accName",
+											"value": "Tuan Dat Thich Code Dao",
+											"type": "text"
+										},
+										{
+											"key": "accPhone",
+											"value": "099999999",
+											"type": "text"
+										},
+										{
+											"key": "accEmail",
+											"value": "DatCoder123@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "accPassword",
+											"value": "12345",
+											"type": "text"
+										},
+										{
+											"key": "accStatus\n",
+											"value": "active",
+											"type": "text"
+										},
+										{
+											"key": "accBirthday",
+											"value": "2003-01-11",
+											"type": "text"
+										},
+										{
+											"key": "roleID",
+											"value": "2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update_Account",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "Avatar",
+											"type": "file",
+											"src": "postman-cloud:///1eed6407-2d92-4af0-88c3-dab379c95bf6"
+										},
+										{
+											"key": "accName",
+											"value": "Tuan Dat Thich Code Dao",
+											"type": "text"
+										},
+										{
+											"key": "accPhone",
+											"value": "099999999",
+											"type": "text"
+										},
+										{
+											"key": "accEmail",
+											"value": "DatCoder@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "accPassword",
+											"value": "12345",
+											"type": "text"
+										},
+										{
+											"key": "accStatus\n",
+											"value": "active",
+											"type": "text"
+										},
+										{
+											"key": "accBirthday",
+											"value": "2003-01-11",
+											"type": "text"
+										},
+										{
+											"key": "roleID",
+											"value": "2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/users/edit/7",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"users",
+										"edit",
+										"7"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ViewPicture",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/users/viewImg/AnhCF.jpg",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"users",
+										"viewImg",
+										"AnhCF.jpg"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Payment",
+					"item": [
+						{
+							"name": "CreatePayment",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "ImgBanking",
+											"type": "file",
+											"src": "postman-cloud:///1eed7a88-1f4b-4680-8296-e00e441dd14c"
+										},
+										{
+											"key": "accountName",
+											"value": "Ngo Pham Thao Vy",
+											"type": "text"
+										},
+										{
+											"key": "banking",
+											"value": "Momo",
+											"type": "text"
+										},
+										{
+											"key": "accountNumber",
+											"value": "0938119484",
+											"type": "text"
+										},
+										{
+											"key": "accID",
+											"value": "3",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/payment",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"payment"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ViewBankingPicture",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/payment/viewImg/z5207094212085_d75ca5560c16dc779cab819ada080015.jpg",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"payment",
+										"viewImg",
+										"z5207094212085_d75ca5560c16dc779cab819ada080015.jpg"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Edit Payment",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "ImgBanking",
+											"type": "file",
+											"src": "postman-cloud:///1eed6437-20c3-46a0-8edf-bd06645ab8ce"
+										},
+										{
+											"key": "accountName",
+											"value": "momo",
+											"type": "text"
+										},
+										{
+											"key": "banking",
+											"value": "123456789",
+											"type": "text"
+										},
+										{
+											"key": "accountNumber",
+											"value": "2256",
+											"type": "text"
+										},
+										{
+											"key": "accID",
+											"value": "3",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/payment/edit/4",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"payment",
+										"edit",
+										"4"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "News",
+					"item": [
+						{
+							"name": "View_Picture",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/news/imgView/AnhCF.jpg",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"news",
+										"imgView",
+										"AnhCF.jpg"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "MailBox",
+			"item": [
+				{
+					"name": "ViewAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/mailbox/view",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"mailbox",
+								"view"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Submit",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mailboxDescription\" : \"Hello\",\r\n    \"mailboxType\" : \"Ok\",\r\n    \"mailboxStatus\" : \"active\",\r\n    \"accIdSend\" : 2,\r\n    \"accIdReceive\" : 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/mailbox/submitMail",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"mailbox",
+								"submitMail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteByID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/mailbox/deleteMail/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"mailbox",
+								"deleteMail",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ViewByAccSend",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/mailbox/sendByAccId/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"mailbox",
+								"sendByAccId",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ViewByAccReceive",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/mailbox/receiveByAccId/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"mailbox",
+								"receiveByAccId",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "view feedback rating by productID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/feedback/view-feedback-rating/13",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"feedback",
+						"view-feedback-rating",
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "view trung bình feedback rating by productID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/feedback/average-feedback-rating/13",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"feedback",
+						"average-feedback-rating",
+						"13"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
